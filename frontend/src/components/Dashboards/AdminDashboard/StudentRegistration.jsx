@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function RegistrationForm() {
+function StudentRegistration() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -204,4 +204,4 @@ const styles = {
   },
 };
 
-export default RegistrationForm;
+export default StudentRegistration;

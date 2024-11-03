@@ -9,6 +9,11 @@ import ViewAttendance from "./components/Dashboards/StudentDashboard/ViewAttenda
 import Payment from "./components/Dashboards/StudentDashboard/Payment";
 import MessCut from "./components/Dashboards/StudentDashboard/MessCut";
 import AdminHome from "./components/Dashboards/AdminDashboard/AdminHome";
+import StudentRegistration from "./components/Dashboards/AdminDashboard/StudentRegistration";
+import ManageStudentProfile from "./components/Dashboards/AdminDashboard/ManageStudentProfile";
+import AttendanceManagement from "./components/Dashboards/AdminDashboard/AttendenceManagement";
+import PaymentGeneration from "./components/Dashboards/AdminDashboard/PaymentGeneration";
+import ManageMessCutRequest from "./components/Dashboards/AdminDashboard/ManageMessCutRequest";
 // Import your RegistrationForm
 import { Route, Routes } from "react-router-dom";
 
@@ -26,6 +31,17 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/messcutrequest" element={<MessCut />} />
         <Route path="/admindashboard" element={<AdminHome />} />
+        <Route path="/studentregistration" element={<StudentRegistration />} />
+        <Route
+          path="/managestudentprofile"
+          element={<ManageStudentProfile />}
+        />
+        <Route
+          path="/attendancemanagement"
+          element={<AttendanceManagement />}
+        />
+        <Route path="/paymentgeneration" element={<PaymentGeneration />} />
+        <Route path="/messcutapproval" element={<ManageMessCutRequest />} />
         {/* Add this line */}
       </Routes>
     </>
